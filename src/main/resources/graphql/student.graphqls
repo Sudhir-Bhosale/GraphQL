@@ -1,0 +1,20 @@
+
+
+
+type Student{
+    id:ID
+    name:String
+}
+
+type Query{
+    findAll:[Student]
+}
+
+type Mutation{
+    addStudent(stu:stuInput):Student
+    updateStudent(id:ID,name:String):Student
+}
+
+input stuInput{
+    name:String
+}
