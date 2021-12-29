@@ -4,6 +4,9 @@
 type Student{
     id:ID
     name:String
+    address:String,
+    mobno:String,
+    gender:String
 }
 
 type Query{
@@ -17,4 +20,7 @@ type Mutation{
 
 input stuInput{
     name:String
+    address:String,
+    mobno:String,
+    gender:String
 }
